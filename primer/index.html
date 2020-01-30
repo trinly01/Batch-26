@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="design.css">
+  <style>
+    .head {
+      color: blue !important;
+      background: greenyellow;
+    }
+  </style>
+  <script src="app.js"></script>
+</head>
+<body>
+  <h1 class="head">Hello Batch 26</h1>
+  <h1 id="answer" style="color: red;">Hello Batch 26</h1>
+  <a href="about.html">about page</a>
+  <br/>
+  num1 <input id="input1" type="text" />
+  <br/>
+  num2 <input id="input2" type="text" />
+  <button onclick="sum()">Add</button>
+  <ul>
+    <li>asdasd asd 1</li>
+    <li>asdasd asd 2</li>
+    <li>asdasd asd 3</li>
+    <li>asdasd asd 4</li>
+    <li>asdasd asd 5</li>
+  </ul>
+  <script>
+    let input = document.getElementById('input1')
+    console.log(input.value)
+    let answerElem = document.querySelector('#answer')
+
+    function sum() {
+      let num1 = document.querySelector('#input1').value
+      let num2 = document.querySelector('#input2').value
+      console.log(num2)
+      answerElem.innerHTML = parseFloat(num1) + parseFloat(num2)
+    }
+  </script>
+</body>
+</html>
+
+Input
+Div
+
+Focus on data (Add edit delete)
+No heavy CSS designs. Material Design (Google Design specs)
+No Heavy Algorithm. Heavy Computation
